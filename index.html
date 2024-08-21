@@ -1,474 +1,294 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>최현경-포트폴리오</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script src="js/particle.js"></script>
+    <script src="js/namemove.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/hover.js"></script>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/v4-shims.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <body id="particles-js">
 
-<body>
-  <!--swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <div id="wrap">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <header>
+      <div id="name">
+        <img src="img/header.png" alt="header">
+        <div id="name_move">
+          <h1>TRY EVERYTHING</h1>
+          <p>CHOI HYEON KYEONG</p>
+        </div>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      width: 100%;
-      overflow-x: hidden;
-      padding: 0;
-      margin: 0;
-      display: block;
-    }
-
-    .it-20231207 img {
-      display: block;
-      width: 100%;
-    }
-
-    .it-20231207 li {
-      list-style: none;
-    }
-
-    /*스케일 슬라이드*/
-    /* .image-swiper-container2 .swiper-slide {
-      transition: all 200ms linear;
-      transform: scale(0.7);
-    }
-
-    .image-swiper-container2 .swiper-slide-active {
-      transform: scale(1.05);
-      margin: 0 -48px;
-    } */
-
-    /*https://image.sisun.com/upload/folder/it-6th-20230927/이미지명.jpg*/
-  </style>
-
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet"> -->
-
-  <div class="it-20231207" style="position:relative;width: 1920px; font-family: 'Noto Sans KR';">
-
-    <!--상단 탭-->
-    <div style="position:relative;width:100%;height:887px;margin:0 auto;cursor:pointer;">
-      <div style="position: absolute;width:100%;top:0;left:0;">
-        <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/header.jpg" />
-      </div>
-      <!--상단 탭-->
-      <ul>
-        <li class="top01" style="position:absolute;width:400px;bottom:0;left:360px;">
-          <a href="#con01" id="scroll_move">
-            <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/off01.png" />
-          </a>
-        </li>
-        <li class="top02" style="position:absolute;width:400px;bottom:0;left:760px;">
-          <a href="#con02" id="scroll_move">
-            <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/off02.png" />
-          </a>
-        </li>
-        <li class="top03" style="position:absolute;width:400px;bottom:0;right:360px;">
-          <a href="#con03" id="scroll_move">
-            <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/off03.png" />
-          </a>
-        </li>
-      </ul>
-      <!--상단 탭 클릭 시-->
-      <ul>
-        <li class="on01" style="position:absolute;width:400px;bottom:0;left:360px;">
-          <a href="#con01" id="scroll_move">
-            <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/on01.png" />
-          </a>
-        </li>
-        <li class="on02" style="position:absolute;width:400px;bottom:0;left:760px;display:none;">
-          <a href="#con02" id="scroll_move">
-            <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/on02.png" />
-          </a>
-        </li>
-        <li class="on03" style="position:absolute;width:400px;bottom:0;right:360px;display:none;">
-          <a href="#con03" id="scroll_move">
-            <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/on03.png" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!--//상단 탭-->
-
-    <!--01-->
-    <div id="con01" style="position:relative;width:100%;height:1800px;margin:0 auto;overflow: hidden;">
-
-      <div style="position:absolute;width:100%;top:0;left:0;">
-        <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01.jpg" />
       </div>
 
-      <!--쿠폰 1-->
-      <div style="position:absolute;width:272px;top:229px;left:690px;">
-        <a name="saveCoupon" href="#none">
-          <input name="coupon_idxs" type="hidden" value="10691">
-          <input name="coupon_idxs" type="hidden" value="10692">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01-1.jpg" alt="전상품할인_12%_쿠폰_6890" />
-        </a>
-      </div>
-      <!--//쿠폰 1-->
 
-      <!--쿠폰 2-->
-      <div style="position:absolute;width:246px;top:229px;right:690px;">
-        <a name="saveCoupon" href="#none">
-          <input name="coupon_idxs" type="hidden" value="10694">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01-2.jpg" alt="선착순중복할인_5%_쿠폰_6890" />
-        </a>
-      </div>
-      <!--//쿠폰 2-->
+    </header>
 
-      <!--기획전 랜딩-->
-      <div style="position:absolute;width:545px;top:900px;left:700px;">
-        <a href="https://sisun.com/ITMICHAA/shop/list?menu=ALL&upper_cate_code=2103&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01-3.jpg" alt="기획전랜딩_6890" />
-        </a>
-      </div>
-
-      <div style="position:absolute;width:545px;top:1020px;left:700px;">
-        <a href="https://sisun.com/ITMICHAA/shop/list?menu=ALL&upper_cate_code=2109&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01-4.jpg" alt="기획전랜딩_6890" />
-        </a>
-      </div>
-
-      <div style="position:absolute;width:545px;top:1137px;left:700px;">
-        <a href="https://sisun.com/ITMICHAA/shop/list?menu=ALL&upper_cate_code=2105&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01-5.jpg" alt="기획전랜딩_6890" />
-        </a>
-      </div>
-
-      <div style="position:absolute;width:545px;top:1255px;left:700px;">
-        <a href="https://sisun.com/ITMICHAA/shop/list?cate_code=211721&upper_cate_code=2117&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/01-6.jpg" alt="기획전랜딩_6890" />
-        </a>
-      </div>
-      <!--//기획전 랜딩-->
-
-    </div>
-    <!--//01-->
-
-    <!--02-->
-    <div id="con02" style="position:relative;width:100%;height:1065px;margin:0 auto;overflow: hidden;">
-
-      <div style="position:absolute;width:100%;top:0;left:0;">
-        <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/02.jpg" />
-      </div>
-
-      <!--랜딩 송세라픽-->
-      <div style="position:absolute;width:365px;top:174px;left:400px;">
-        <a href="https://sisun.com/ITMICHAA/event/sale/6787">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/1.jpg" alt="기획전랜딩_6890" />
-        </a>
+    <section id="contents">
+       <!--01.첫번째-->
+      <div class="article">
+        <div class="photo1">
+          <div class="back1">
+            <div class="slidewrap">
+              <ul class="slide">
+                <li><img src="img/i1.jpg" alt="i1"></li>
+                <li><img src="img/i2.jpg" alt="i2"></li>
+                <li><img src="img/i3.jpg" alt="i3"></li>
+              </ul>
+            </div>
+           <a href="html/isu/isu_main.html" target="_blank" class="link">
+            <div class="hover">
+              <div class="plus"><i class="fas fa-search-plus"></i></div>
+            </div>
+           </a>
+          </div>
+          <div class="mobile1">
+            <img src="img/phone.png" alt="phone">
+            <div class="m_slidewrap1">
+              <ul class="m_slide1">
+                <li><img src="img/m_figure.jpg" alt="m_figure"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text1">
+          <div class="text1_box">
+            <h1><span>Design</span> 01</h1>
+            <h2>International Skating Union</h2>
+            <span>얼음위 곡선,<br>
+                  그리고 예술</span>
+            <div class="color">
+              <div class="c1"></div>
+              <div class="c2"></div>
+            </div>
+            <p>흰색을 베이스 컬러로 사용하고
+               포인트색상은 보라색계열로 사용하여 생동감을 주었다.
+               <br><br>
+               슬라이더 부분에 피겨스케이팅 장면을 추가하여<br>홈페이지의 주제를 전달하였다.
+               <br><br>
+               곡선을 이용하여 피겨스케이팅의 우아한 <br>
+               느낌을 살려주었다.
+               <br><br>
+               피겨스케이팅 선수들의 출전영상을 첨부하여 <br>
+               영상정보를 제공하였으며, 그에 대한 설명을 <br>
+               하단에 추가해주었다.</p>
+          </div>
+        </div>
       </div>
 
-      <div style="position:absolute;width:365px;top:534px;left:400px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023091900008&goods_color=029&event_idx=6787&event_group_idx=8694&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/1-1.jpg" alt="상품랜딩_6890" />
-        </a>
+      <!--02.두번째-->
+      <div class="article">
+        <div class="text2">
+          <div class="text2_box">
+            <h1><span>Design</span> 02</h1>
+            <h2>Bordeaux Winery Tour</h2>
+            <span>동화 속 와인정원,<br>
+                  보르도에서의 하루는 길다</span>
+            <div class="color">
+              <div class="c3"></div>
+              <div class="c4"></div>
+            </div>
+            <p>
+               과수원의 배경과 와인의 모습이 담긴 사진을<br> 사용하여 홈페이지의 주제를 전달하였다.
+               <br><br>
+               전통있는 와인의 느낌을 주기 위하여<br>
+               빈티지한 느낌의 아이콘을 사용하였다.
+                <br><br>
+                파스텔톤의 갈색을 사용하여 이미지의  <br>정보에 집중할 수 있도록 하였다.
+                <br><br>
+                슬라이더 하단부분에 Input box로 예약란을<br>추가하여 유저의 편의성을 주었다.</p>
+          </div>
+        </div>
+        <div class="photo2">
+          <div class="back2">
+            <div class="slidewrap2">
+              <ul class="slide2">
+                <li><img src="img/w1.jpg" alt="wrap1"></li>
+                <li><img src="img/w2.jpg" alt="wrap2"></li>
+              </ul>
+            </div>
+           <a href="html/wine/wine_main.html" target="_blank" class="link">
+            <div class="hover">
+              <div class="plus"><i class="fas fa-search-plus"></i></div>
+            </div>
+           </a>
+          </div>
+          <div class="mobile2">
+            <img src="img/phone.png" alt="mobile_phone">
+            <div class="m_slidewrap2">
+              <ul class="m_slide2">
+                <li><img src="img/m_w.jpg" alt="m_w"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div style="position:absolute;width:365px;top:665px;left:400px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023081200004&goods_color=008&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/1-2.jpg" alt="상품랜딩_6890" />
-        </a>
+      <!--03.세번째-->
+      <div class="article">
+        <div class="photo3">
+          <div class="back3">
+            <div class="slidewrap3">
+              <ul class="slide3">
+                <li><img src="img/f1.jpg" alt="f1"></li>
+                <li><img src="img/f2.jpg" alt="f2"></li>
+                <li><img src="img/f3.jpg" alt="f3"></li>
+              </ul>
+            </div>
+           <a href="html/furniture/furniture_main.html" target="_blank" class="link">
+            <div class="hover">
+              <div class="plus"><i class="fas fa-search-plus"></i></div>
+            </div>
+           </a>
+          </div>
+          <div class="mobile3">
+            <img src="img/phone.png" alt="mobile_phone3">
+            <div class="m_slidewrap3">
+              <ul class="m_slide3">
+                <li><img src="img/m_f.jpg" alt="m_f"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text3">
+          <div class="text3_box">
+            <h1><span>Design</span> 03</h1>
+            <h2>Furniture Is Art</h2>
+            <span>편안함에 예술을 더해<br>
+                  작품이 되다</span>
+            <div class="color">
+              <div class="c5"></div>
+              <div class="c6"></div>
+            </div>
+            <p>어두운 배경을 사용하여 가구의 <br>
+               고급스러운 느낌을 살려주었다.
+               <br><br>
+               사용자가 아이콘에 마우스오버시 색상이 바뀌고 <br>
+               움직이도록하여 인터렉티브한 느낌을 주었다.
+               <br><br>
+               메인페이지의 하단부분에 지도를 추가하여 <br>
+               위치정보를 제공하여 신뢰감을 주었다.
+               </p>
+          </div>
+        </div>
       </div>
 
-      <div style="position:absolute;width:365px;top:775px;left:400px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023111600003&goods_color=029&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/1-3.jpg" alt="상품랜딩_6890" />
-        </a>
-      </div>
-      <!--//랜딩 송세라픽-->
-
-      <!--랜딩 홀리데이 셀럽픽-->
-      <div style="position:absolute;width:365px;top:174px;left:780px;">
-        <a href="https://sisun.com/ITMICHAA/event/sale/6809">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/2.jpg" alt="기획전랜딩_6890" />
-        </a>
-      </div>
-
-      <!--폭스 퍼트리밍 구스다운 패딩-->
-      <div style="position:absolute;width:365px;top:534px;left:780px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072800045&goods_color=008&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/2-1.jpg" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--백스트랩 핸드메이드 코트-->
-      <div style="position:absolute;width:365px;top:665px;left:780px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023081700008&goods_color=039&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/2-2.jpg" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--윙카라 핸드메이드 코트-->
-      <div style="position:absolute;width:365px;top:775px;left:780px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023081700009&goods_color=003&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/2-3.jpg" alt="상품랜딩_6890" />
-        </a>
-      </div>
-      <!--//랜딩 홀리데이 셀럽픽-->
-
-      <!--랜딩 4인4색 셀럽픽-->
-      <div style="position:absolute;width:365px;top:174px;right:400px;">
-        <a href="https://sisun.com/ITMICHAA/event/sale/6808">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/3.jpg" alt="기획전랜딩_6890" />
-        </a>
+      <!--04.네번째-->
+      <div class="article">
+        <div class="text4">
+          <div class="text4_box">
+            <h1><span>Design</span> 04</h1>
+            <h2>Camping In Life</h2>
+            <span>좋은 장비가<br>
+                  좋은 추억을 만든다<br>
+            </span>
+            <div class="color">
+              <div class="c7"></div>
+              <div class="c8"></div>
+            </div>
+            <p>
+                쇼핑몰의 특성상 많은 제품을 보여주기<br> 때문에 메인색상을 흰색으로 하였다.
+                <br><br>
+                유저가 상품을 보기에 편리하게 하기 위해서 <br>상품구역을 나누어 정렬된 박스로 배치하였다.<br><br>
+                그린계열을 포인트컬러로 사용하여 <br>
+                자연적인 캠핑의 분위기를 살려주었다.
+                <br><br>
+                중간중간 배너와 사진을 추가하여 <br>
+                자세한 정보를 전달하였다.</p>
+          </div>
+        </div>
+        <div class="photo4">
+          <div class="back4">
+            <div class="slidewrap4">
+              <ul class="slide4">
+                <li><img src="img/c1.jpg" alt="c1"></li>
+                <li><img src="img/c2.jpg" alt="c2"></li>
+              </ul>
+            </div>
+           <a href="html/camping/camping_main.html" target="_blank" class="link">
+            <div class="hover">
+              <div class="plus"><i class="fas fa-search-plus"></i></div>
+            </div>
+           </a>
+          </div>
+        </div>
       </div>
 
-      <!--토글장식 퍼자켓-->
-      <div style="position:absolute;width:365px;top:534px;right:400px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023090700007&goods_color=026&event_idx=6808&event_group_idx=8619&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/3-1.jpg" alt="상품랜딩_6890" />
-        </a>
+      <!--05.디삿번째-->
+      <div class="article">
+        <div class="photo5">
+          <div class="back5">
+            <div class="slidewrap5">
+              <ul class="slide5">
+                <li><img src="img/s1.jpg" alt="s1"></li>
+                <li><img src="img/s2.jpg" alt="s2"></li>
+              </ul>
+            </div>
+           <a href="html/singapore/singapore_main.html" target="_blank" class="link">
+            <div class="hover">
+              <div class="plus"><i class="fas fa-search-plus"></i></div>
+            </div>
+           </a>
+          </div>
+        </div>
+        <div class="text5">
+          <div class="text5_box">
+            <h1><span>Design</span> 05</h1>
+            <h2>Colorful Singapore</h2>
+            <span>공존하는 문화속, <br>
+                  싱가포르의 낮과 밤<br>
+                  </span>
+            <div class="color">
+              <div class="c9"></div>
+              <div class="c10"></div>
+            </div>
+            <p>슬라이더 부분에 싱가포르의 대표적 상징인<br>
+                머라이언의 사진을 사용하여 사이트의 <br>
+                주제를 정확하게 전달하였다.
+                <br><br>
+                싱가포르의 밝고 경쾌한 느낌을 주기 위하여 <br>
+                전체적인 색감을 블루계열로 주었다.
+                <br><br>
+                하단부분에는 박스를 원형으로 만들어 <br>
+                부드러운 느낌을 주었다.</p>
+          </div>
+        </div>
       </div>
 
-      <!--더블버튼 크롭 무스탕-->
-      <div style="position:absolute;width:365px;top:665px;right:400px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023090700004&goods_color=026&event_idx=6808&event_group_idx=8619&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/3-2.jpg" alt="상품랜딩_6890" />
-        </a>
-      </div>
+    </section>
 
-      <!--V자수 경량 구스다운 숏패딩-->
-      <div style="position:absolute;width:365px;top:775px;right:400px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072800019&goods_color=030&event_idx=6808&event_group_idx=8619&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/3-3.jpg" alt="상품랜딩_6890" />
-        </a>
-      </div>
-      <!--//랜딩 4인4색 셀럽픽-->
-
-    </div>
-    <!--//02-->
-
-    <!--03-->
-    <div id="con03" style="position:relative;width:100%;height:1070px;margin:0 auto;overflow: hidden;">
-
-      <div style="position:absolute;width:100%;top:0;left:0;">
-        <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/03.jpg" />
-      </div>
-
-      <!--기획전 보러가기-->
-      <div style="position:absolute;width:395px;bottom:240px;left:781px;">
-        <a href="https://sisun.com/ITMICHAA/event/sale/6896">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn01.png" alt="기획전랜딩_6890" />
-        </a>
-      </div>
-      <!--//기획전 보러가기-->
-
-      <!--상품랜딩-->
-      <!--스탠카라 핸드메이드 코트-->
-      <div style="position:absolute;width:50px;bottom:445px;left:438px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023081500023&goods_color=005&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--캐시미어 핸드메이드 코트-->
-      <div style="position:absolute;width:50px;bottom:630px;left:694px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023081500022&goods_color=024&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--구스다운 롱패딩-->
-      <div style="position:absolute;width:50px;bottom:490px;left:994px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072800056&goods_color=026&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--테이프 배색 자켓-->
-      <div style="position:absolute;width:50px;bottom:792px;left:1220px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072800040&goods_color=051&ithrCd=">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--테이프 배색 스커트-->
-      <div style="position:absolute;width:50px;bottom:662px;left:1170px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072800041&goods_color=051">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--캐시미어 핸드메이드 스커트-->
-      <div style="position:absolute;width:50px;bottom:232px;left:1320px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072500020&goods_color=074">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-
-      <!--캐시미어 핸드케이드 자켓-->
-      <div style="position:absolute;width:50px;bottom:482px;left:1417px;">
-        <a href="https://sisun.com/ITMICHAA/shop/view?goods_code=G2023072500019&goods_color=074">
-          <img src="https://image.sisun.com/upload/folder/it-newyear-20231227/btn02.png" alt="상품랜딩_6890" />
-        </a>
-      </div>
-      <!--//상품랜딩-->
+   <footer>
+     <div class="footer_box1">
+       <img src="img/profile3.png" alt="profile_img">
+     </div>
+     <div class="footer_box2">
+       <h3>PROFILE</h3>
+       <ul>
+       <li>NAME : CHOI HYEON KYEONG</li>
+       <li>BIRTH : 1994.12.13</li>
+       <li>E-MAIL : penny9939@naver.com</li>
+       <li>PHONE : 010-6394-9930</li>
+        </ul>
+     </div>
+     <div class="footer_box2">
+       <h3>CAREER</h3>
+       <ul>
+         <li>ANSAN LINECOMPUTER ART ACADEMY</li>
+         <li>DIGITAL UX/UI Web Publishing</li>
+         <li>: 2019.06~2019.10</li>
+        </ul>
+     </div>
+   </footer>
 
     </div>
-    <!--//03-->
-
-  </div>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript">
-
-    const swiper1 = new Swiper('.image-swiper-container1', {
-      slidesPerView: 4.1,
-      spaceBetween: 10,
-      // centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      speed: 1500,
-      loop: true,
-    });
-
-    const swiper2 = new Swiper('.image-swiper-container2', {
-      slidesPerView: 3.5,
-      spaceBetween: 15,
-      // centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      speed: 1500,
-      loop: true,
-    });
-
-
-    //탭클릭 시 스크롤 이동
-    $(document).ready(function ($) {
-
-      $(".scroll_move").click(function (event) {
-
-        event.preventDefault();
-
-        $('html,body').animate({
-          scrollTop: $(this.hash).offset().top
-        }, 500);
-
-      });
-
-    });
-
-
-    $(document).ready(function () {
-
-      $('.top01').click(function () {
-        $('.on01').show();
-        $('.on02').hide();
-        $('.on03').hide();
-        $('.on04').hide();
-        $('.on05').hide();
-      });
-      $('.top02').click(function () {
-        $('.on02').show();
-        $('.on01').hide();
-        $('.on03').hide();
-        $('.on04').hide();
-        $('.on05').hide();
-      });
-      $('.top03').click(function () {
-        $('.on03').show();
-        $('.on01').hide();
-        $('.on02').hide();
-        $('.on04').hide();
-        $('.on05').hide();
-      });
-      $('.top04').click(function () {
-        $('.on04').show();
-        $('.on01').hide();
-        $('.on02').hide();
-        $('.on03').hide();
-        $('.on05').hide();
-      });
-      $('.top05').click(function () {
-        $('.on05').show();
-        $('.on04').hide();
-        $('.on01').hide();
-        $('.on02').hide();
-        $('.on03').hide();
-      });
-
-      //유의사항 01
-      $(".more1-btn").click(function () {
-        $(".more1").slideToggle("slow");
-      })
-
-      $(".more1-btn01").click(function () {
-        $(".more1-btn02").show();
-        $(".more1-btn01").hide();
-      })
-
-      $(".more1-btn02").click(function () {
-        $(".more1-btn01").show();
-        $(".more1-btn02").hide();
-      })
-
-      //유의사항 02
-      $(".more2-btn").click(function () {
-        $(".more2").slideToggle("slow");
-      })
-
-      $(".more2-btn01").click(function () {
-        $(".more2-btn02").show();
-        $(".more2-btn01").hide();
-      })
-
-      $(".more2-btn02").click(function () {
-        $(".more2-btn01").show();
-        $(".more2-btn02").hide();
-      })
-
-      //유의사항 03
-      $(".more3-btn").click(function () {
-        $(".more3").slideToggle("slow");
-      })
-
-      $(".more3-btn01").click(function () {
-        $(".more3-btn02").show();
-        $(".more3-btn01").hide();
-      })
-
-      $(".more3-btn02").click(function () {
-        $(".more3-btn01").show();
-        $(".more3-btn02").hide();
-      })
-
-      //swiper image
-      var swiper = new Swiper(".it-Swiper", {
-        spaceBetween: 50,
-        slidesPerView: 3,
-        centeredSlides: true,
-        loop: true,
-        speed: 1000,
-        autoplay: {
-          delay: 1500,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-
-    });
-  </script>
-</body>
-
+  </body>
 </html>
